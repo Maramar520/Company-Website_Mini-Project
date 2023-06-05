@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/revou.jpg" alt="revoU Logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Profile</div>
+            <div class="nav-item">Portfolio</div>
+            <div class="nav-item">Message Us</div>
+        </div>
+    </header>
+    <div id="hero-section" class="hero">
+        <!-- <img src="" alt="hero image"> -->
+        <h1>Hi, Alvian. Welcome to Website!</h1>
+        <h2>Ini adalah website latihan pertama</h2>
+    </div>
+    <div id="headquarters-section">
+        <h1>Headquarters</h1>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </div>
+    <div id="message-us-section" class="message-us">
+        <h1>Message Us</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                        <input id="input-nama" type="text" name="nama"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <input type="date" name="tanggal-lahir"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="laki-laki">Laki-Laki</input>
+                        <input type="radio" name="gender" value="perempuan">Perempuan</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message Us</td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="pesan"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button id="kirim">Kirim</button>
+        </form>
+    </div>
+    <div></div>
+    <footer>Created by RevoU</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
