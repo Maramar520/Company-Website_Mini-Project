@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="assets/revou.jpg" alt="revoU Logo" class="logo">
+        <img src="assets/logo.jpg" alt="revoU Logo" class="logo">
         <div class="nav-bar">
             <div class="nav-item">Home</div>
             <div class="nav-item">Profile</div>
@@ -18,67 +18,78 @@
         </div>
     </header>
     <div id="hero-section" class="hero">
-        <!-- <img src="" alt="hero image"> -->
-        <h1>Hi, Alvian. Welcome to Website!</h1>
-        <h2>Ini adalah website latihan pertama</h2>
+        <div class="hero-slide active">
+            <img src="../assets/banner 1.jpg" alt="Slide 1">
+        </div>
+        <div class="hero-slide">
+            <img src="../assets/banner 2.jpg" alt="Slide 2">
+        </div>
+        <div class="hero-slide">
+            <img src="../assets/banner 3.jpg" alt="Slide 3">
+        </div>
     </div>
-    <div id="headquarters-section">
+    <div id="headquarters-section" class="headquarters">
         <h1>Headquarters</h1>
         <div class="wrapper">
             <div class="headquarters-image-container">
-                <div class="headquarters-image"></div>
+                <div class="headquarters-image" style="background-image: url('../assets/jakarta.jpg');"></div>
                 <p>Jakarta</p>
             </div>
             <div class="headquarters-image-container">
-                <div class="headquarters-image"></div>
+                <div class="headquarters-image" style="background-image: url('../assets/bandung.jpg');"></div>
                 <p>Bandung</p>
             </div>
             <div class="headquarters-image-container">
-                <div class="headquarters-image"></div>
+                <div class="headquarters-image" style="background-image: url('../assets/surabaya.jpg');"></div>
                 <p>Surabaya</p>
             </div>
         </div>
     </div>
     <div id="message-us-section" class="message-us">
-        <h1>Message Us</h1>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama</td>
-                    <td>:</td>
-                    <td>
-                        <input id="input-nama" type="text" name="nama"></input>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tanggal Lahir</td>
-                    <td>:</td>
-                    <td>
-                        <input type="date" name="tanggal-lahir"></input>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jenis Kelamin</td>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" name="gender" value="laki-laki">Laki-Laki</input>
-                        <input type="radio" name="gender" value="perempuan">Perempuan</input>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Message Us</td>
-                    <td>:</td>
-                    <td>
-                        <textarea name="pesan"></textarea>
-                    </td>
-                </tr>
-            </table>
-            <button id="kirim">Kirim</button>
+        <form id="msg" enctype="multipart/form-data" method="post">
+            <h1>Message Us</h1>
+            <div class="table">
+                <table class="table-x" width="500px">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td width="10%">
+                            <input id="input-nama" type="text" name="nama" style="width: 350px;" autocomplete="off"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td width="10%">
+                            <input id="input-ttl" type="date" name="tanggal-lahir" style="width: 350px;" autocomplete="off"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td width="10%">
+                            <input type="radio" name="gender" value="laki-laki">Laki-Laki</input>
+                            <input type="radio" name="gender" value="perempuan">Perempuan</input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message Us</td>
+                        <td>:</td>
+                        <td width="10%">
+                            <textarea id="input-msg" name="pesan" autocomplete="off"></textarea>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="3">
+                            <input type="submit" value="Kirim" class="kirim" onclick="myFunction()"></input>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </form>
+        <div id="result" class="output"></div> 
     </div>
-    <div></div>
-    <footer>Created by RevoU</footer>
-
+    <footer>Created by Beauty</footer>
     <script src="js/script.js"></script>
 </body>
 </html>
